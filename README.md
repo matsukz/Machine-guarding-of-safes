@@ -27,14 +27,17 @@
 * 金庫の鍵でロックを解除し内容物を操作する
 * 金庫を開けても何も起こらない 
 * 解除モード時はLEDを緑色に点灯させる（予定）
+
 ### 監視モード
 * 監視モード中に金庫を開ける（リードスイッチが離れる）と警報が作動する
   * 金庫を開けるためには解除モードにしなければならない
+  * 他人に金庫を開けられないようにするものではなく、無断利用を検知するシステムである
 * LEDを赤色に点灯させる（予定）
 
 ![Conceptual_Diagram](https://github.com/matsukz/Machine-guarding-of-safes/blob/main/img/Conceptual_Diagram.png?raw=true)
 
 ![State_Diagram](https://github.com/matsukz/Machine-guarding-of-safes/blob/main/img/State_Diagram.png?raw=true)
+
 
 ## 特定操作について
 * Webアプリを構築しセンシング状態の確認や動作モード操作を行う
@@ -45,6 +48,7 @@
 * 電源
   * 金庫内は当然密閉されているため、コンセントから電源を供給することができない
   * モバイルバッテリーを利用すればいいが、バッテリーの劣化やバッテリー切れによる動作停止が発生する
+  
 * 警報
   * 警報などの通知を行うアプリが必要である
   * Webアプリだと通知を送ることができない 
